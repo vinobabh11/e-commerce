@@ -9,8 +9,8 @@ const SortModal = () => {
 
     const options = [
         { id: 1, label: "None" },
-        { id: 2, label: "High to Low" },
-        { id: 3, label: "Low to High" },
+        { id: 2, label: "Price: High to Low" },
+        { id: 3, label: "Price: Low to High" },
     ];
 
     const handleCheckboxChange = (id) => {

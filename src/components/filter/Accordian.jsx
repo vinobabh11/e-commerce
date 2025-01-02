@@ -101,7 +101,6 @@ const Accordion = ({ filterButton, clearAll, onClearProcessed, storedFilter }) =
         filterButton(result, updatedSelectedItems);
     };
 
-
     return (
         <div id="accordion-collapse">
             {data.map((section) => (
@@ -115,7 +114,7 @@ const Accordion = ({ filterButton, clearAll, onClearProcessed, storedFilter }) =
                         >
                             <span>{section.title}</span>
                             <svg
-                                className={`w-4 h-4 transform transition-transform ${openSections[section.id] ? 'rotate-180' : ''
+                                className={`w-4 h-4 transform transition-transform ${!openSections[section.id] ? 'rotate-180' : ''
                                     }`}
                                 aria-hidden="true"
                                 xmlns="http://www.w3.org/2000/svg"
